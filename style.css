@@ -1,0 +1,233 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #232937;
+  overflow: hidden;
+}
+
+.hasTopMarginSmall {
+  margin-top: 5px;
+}
+
+.hasNegativeBottomMarginNormal {
+  margin-bottom: -10px;
+}
+
+.alert {
+  color: red;
+  border: 1px solid red;
+  background: #ffeeee;
+  padding: 5px;
+}
+
+.container {
+  background-color: #232937;
+  position: relative;
+  height: 700px;
+}
+
+.isTextCentered {
+  text-align: center;
+  color: #e4f0fb;
+}
+
+.isHiddenBlock {
+  display: none;
+}
+
+
+.centerOfMass {
+  position: absolute;
+  width: 11px;
+  top: 50%;
+  left: 50%;
+  margin-left: -5.5px;
+  margin-top: -5.5px;
+  z-index: 998;
+}
+
+.earth,
+.jupiter,
+.sun {
+  position: absolute;
+  width: 60px;
+  top: -1000px;
+  left: -1000px;
+  z-index: 1000;
+}
+
+.bodyImage {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.spin {
+  -webkit-animation: spin .5s linear infinite;
+  -moz-animation: spin .5s linear infinite;
+  animation: spin .5s linear infinite;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+.canvas {
+  display: block;
+}
+
+.isUnselectable {
+  -webkit-touch-callout: none;
+  /* -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+.hudContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+}
+
+.hudContainerChild {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.leftBottomButtonCantainer {
+  position: absolute;
+  display: block;
+  left: 15px;
+  right: 15px;
+  bottom: 10px;
+  height: 40px;
+}
+
+.leftBottomButton {
+  display: block;
+  height: 40px;
+  width: 40px;
+  float: left;
+}
+
+.leftBottomImage {
+  height: 100%;
+  border: 0;
+}
+
+.doesChangeOpacityOnHover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.doesChangeOpacityOnHover:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+.reload {
+  position: absolute;
+  display: block;
+  bottom: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+}
+
+.reloadIcon {
+  width: 100%;
+  border: 0;
+}
+
+
+.slider {
+  margin: 0 auto;
+}
+
+.sliderSun .SickSlider-head {
+  background-color: #4b4b4b;
+}
+
+.sliderEarth .SickSlider-head {
+  background-color: #4b4b4b;
+}
+
+.sliderJupiter .SickSlider-head {
+  background-color: #4b4b4b;
+}
+
+
+
+.button {
+  margin: 5px;
+  padding: 5px 10px 3px 10px;
+  display: inline-block;
+  color: rgb(34, 34, 34);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: -96vh;
+  z-index: 2000;
+  border-radius: 1rem;
+}
+
+.button--isSelected {
+  background-color: #df4576;
+}
+
+
+.SickSlider {
+  position: relative;
+  height: 60px;
+  cursor: pointer;
+}
+
+.SickSlider-stripe {
+  height: 5px;
+  width: 100%;
+  background-color: #999999;
+  position: absolute;
+  top: 28px;
+  left: 0px;
+}
+
+.SickSlider-head {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 30px;
+  height: 40px;
+  background-color: #999999;
+  border: 1px solid #FFFFFF;
+}
